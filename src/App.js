@@ -18,7 +18,7 @@ import BeneficiariesTable from "./pages/Home/Backend/BackendHome/DataTables/Bene
 import BeneficiaryLists from "./pages/Home/Backend/Supervisor/BeneficiaryLists";
 import Footer from "./components/footer/Footer";
 
-import Overview from "./pages/Home/Backend/Supervisor/Overview";
+// import Overview from "./pages/Home/Backend/Supervisor/Overview";
 
 import { SchemeProvider } from "./components/ContextAPI/SchemesAPI";
 
@@ -50,7 +50,7 @@ const Main = withRouter(({ location }) => {
         )}
       <Switch>
         <Route path="/adminlogin" exact component={AdminLogin} />
-        <AuthGuard path="/overview" exact component={Overview} />
+        {/* <AuthGuard path="/overview" exact component={Overview} /> */}
       </Switch>
     </>
   );

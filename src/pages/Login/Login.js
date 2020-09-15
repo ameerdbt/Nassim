@@ -28,7 +28,7 @@ const Login = () => {
               // console.log(user);
               localStorage.setItem("token", message);
               localStorage.setItem("user", JSON.stringify(user));
-              history.push("/overview", { user: res.data.user[0] });
+              history.push("/beneficiary-lists", { user: res.data.user[0] });
 
               setLoading(false);
             })

@@ -23,9 +23,7 @@ const SNav = () => {
         <a
           className="navbar-brand navbrand-title d-none d-md-block"
           href="#page-top"
-        >
-          NATIONAL SOCIAL INVESTMENT MANAGEMENT SYSTEM
-        </a>
+        ></a>
 
         <button
           className="navbar-toggler navbar-toggler-right"
