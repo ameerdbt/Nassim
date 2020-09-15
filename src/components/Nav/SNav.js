@@ -65,7 +65,7 @@ const SNav = () => {
                   transform: "translate3d(-11px, 50px, 0px)",
                 }}
               >
-                <a className="dropdown-item" href="/overview">
+                <a className="dropdown-item" href="/beneficiary-lists">
                   My Profile
                 </a>
                 {/* <a className="dropdown-item" href="settings.html">
