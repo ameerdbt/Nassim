@@ -25,29 +25,28 @@ import { SchemeProvider } from "./components/ContextAPI/SchemesAPI";
 const Main = withRouter(({ location }) => {
   return (
     <>
-      {location.pathname !== "/adminlogin" &&
-        location.pathname !== "/overview" && (
-          <>
-            <Nav />
-            <Route path="/" exact component={Home} />
-            <Route path="/login" exact component={Login} />
+      {location.pathname !== "/adminlogin" && (
+        <>
+          <Nav />
+          <Route path="/" exact component={Home} />
+          <Route path="/login" exact component={Login} />
 
-            <SchemeProvider>
-              <AuthGuard path="/dashboard" exact component={BackendHome} />
-              <AuthGuard
-                path="/beneficiaries/:id"
-                exact
-                component={BeneficiariesTable}
-              />
-            </SchemeProvider>
+          <SchemeProvider>
+            <AuthGuard path="/dashboard" exact component={BackendHome} />
             <AuthGuard
-              path="/beneficiary-lists"
+              path="/beneficiaries/:id"
               exact
-              component={BeneficiaryLists}
+              component={BeneficiariesTable}
             />
-            <Footer />
-          </>
-        )}
+          </SchemeProvider>
+          <AuthGuard
+            path="/beneficiary-lists"
+            exact
+            component={BeneficiaryLists}
+          />
+          <Footer />
+        </>
+      )}
       <Switch>
         <Route path="/adminlogin" exact component={AdminLogin} />
         {/* <AuthGuard path="/overview" exact component={Overview} /> */}

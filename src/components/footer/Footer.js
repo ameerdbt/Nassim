@@ -1,13 +1,13 @@
-import React from 'react'
-import './footer.scss'
+import React from "react";
+import "./footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="py-4">
+    <footer className="py-2">
       <div className="container">
         <div className="row justify-content-between">
           <div className="my-2 text-center col-12 col-md-4">
-            &copy; { new Date().getFullYear() } NASIMS. All rights reserved
+            &copy; {new Date().getFullYear()} NASIMS. All rights reserved
           </div>
           <div className="my-2 text-center col-12 col-md-4">
             <a href="/apply">Apply</a>
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
